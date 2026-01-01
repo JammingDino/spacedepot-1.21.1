@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "spacedepot:block/wooden_space_crate_top",
+    "bottom": "spacedepot:block/wooden_space_crate_bottom",
+    "side": "spacedepot:block/wooden_space_crate_side"
+  }
+}

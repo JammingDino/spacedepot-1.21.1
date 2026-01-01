@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "spacedepot:block/iron_space_crate"
+    }
+  }
+}

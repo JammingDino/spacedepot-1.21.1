@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "spacedepot:solar_block" }
+  ],
+  "result": {
+    "count": 9,
+    "id": "spacedepot:solar_chunk"
+  }
+}

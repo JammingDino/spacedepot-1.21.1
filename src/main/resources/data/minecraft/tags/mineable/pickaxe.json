@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "spacedepot:wooden_space_crate",
+    "spacedepot:iron_space_crate",
+    "spacedepot:gold_space_crate",
+    "spacedepot:diamond_space_crate",
+    "spacedepot:emerald_space_crate",
+    "spacedepot:obsidian_space_crate",
+    "spacedepot:netherite_space_crate"
+  ]
+}

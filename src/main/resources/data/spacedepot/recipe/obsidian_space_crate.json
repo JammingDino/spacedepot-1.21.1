@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#s#",
+    "###"
+  ],
+  "key": {
+    "s": {
+      "item": "spacedepot:emerald_space_crate"
+    },
+    "#": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "id": "spacedepot:obsidian_space_crate"
+  }
+}

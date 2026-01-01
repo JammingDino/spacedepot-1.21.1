@@ -1,0 +1,22 @@
+{
+  "itemGroup.spacedepot": "Space Depot",
+  "block.spacedepot.wooden_space_crate": "Wooden Space Crate",
+  "block.spacedepot.iron_space_crate": "Iron Space Crate",
+  "block.spacedepot.gold_space_crate": "Gold Space Crate",
+  "block.spacedepot.diamond_space_crate": "Diamond Space Crate",
+  "block.spacedepot.emerald_space_crate": "Emerald Space Crate",
+  "block.spacedepot.obsidian_space_crate": "Obsidian Space Crate",
+  "block.spacedepot.netherite_space_crate": "Netherite Space Crate",
+
+  "container.spacedepot.wooden_space_crate": "Wooden Crate",
+  "container.spacedepot.iron_space_crate": "Iron Crate",
+  "container.spacedepot.gold_space_crate": "Gold Crate",
+  "container.spacedepot.diamond_space_crate": "Diamond Crate",
+  "container.spacedepot.emerald_space_crate": "Emerald Crate",
+  "container.spacedepot.obsidian_space_crate": "Obsidian Crate",
+  "container.spacedepot.netherite_space_crate": "Netherite Crate",
+
+  "item.spacedepot.solar_coin": "Solar Coin",
+  "item.spacedepot.solar_chunk": "Solar Chunk",
+  "block.spacedepot.solar_block": "Solar Block"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    { "item": "spacedepot:solar_coin" },
+    { "item": "spacedepot:solar_coin" },
+    { "item": "spacedepot:solar_coin" },
+    { "item": "spacedepot:solar_coin" },
+    { "item": "spacedepot:solar_coin" },
+    { "item": "spacedepot:solar_coin" },
+    { "item": "spacedepot:solar_coin" },
+    { "item": "spacedepot:solar_coin" },
+    { "item": "spacedepot:solar_coin" }
+  ],
+  "result": {
+    "count": 1,
+    "id": "spacedepot:solar_chunk"
+  }
+}

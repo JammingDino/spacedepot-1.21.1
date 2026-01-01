@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#s#",
+    "###"
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:stone"
+    },
+    "#": {
+      "tag": "minecraft:logs"
+    }
+  },
+  "result": {
+    "id": "spacedepot:wooden_space_crate"
+  }
+}

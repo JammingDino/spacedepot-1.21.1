@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "spacedepot:block/solar_block"
+    }
+  }
+}

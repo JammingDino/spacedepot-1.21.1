@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#s#",
+    "###"
+  ],
+  "key": {
+    "s": {
+      "item": "spacedepot:wooden_space_crate"
+    },
+    "#": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "id": "spacedepot:iron_space_crate"
+  }
+}
