@@ -13,6 +13,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.neoforged.neoforge.network.handling.IPayloadContext;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 public record LaunchPacket(BlockPos pos, UUID questId) implements CustomPacketPayload {
@@ -32,24 +33,17 @@ public record LaunchPacket(BlockPos pos, UUID questId) implements CustomPacketPa
     public static void handle(final LaunchPacket payload, final IPayloadContext context) {
         context.enqueueWork(() -> {
             if (context.player() instanceof ServerPlayer player) {
-                SpaceDepot.LOGGER.info("PACKET: Received Launch Request for Quest ID: {}", payload.questId);
-
                 if (player.level().getBlockEntity(payload.pos) instanceof SpaceLauncherBlockEntity launcher) {
                     long day = player.level().getDayTime() / 24000L;
-                    SpaceDepot.LOGGER.info("PACKET: Server Day: {}", day);
 
-                    List<DepotQuest> quests = QuestManager.getDailyQuests(day);
+                    // Look up quest
+                    Optional<DepotQuest> quest = QuestManager.get().findQuest(day, payload.questId);
 
-                    for (DepotQuest q : quests) {
-                        if (q.id().equals(payload.questId)) {
-                            SpaceDepot.LOGGER.info("PACKET: Found matching quest: {}", q.title());
-                            launcher.tryLaunch(q);
-                            return;
-                        }
+                    if (quest.isPresent()) {
+                        launcher.tryLaunch(quest.get());
+                    } else {
+                        SpaceDepot.LOGGER.warn("Quest ID {} not found.", payload.questId);
                     }
-                    SpaceDepot.LOGGER.info("PACKET FAIL: Quest ID not found in server list for today.");
-                } else {
-                    SpaceDepot.LOGGER.info("PACKET FAIL: No Launcher BlockEntity found at {}", payload.pos);
                 }
             }
         });

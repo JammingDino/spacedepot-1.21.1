@@ -1,0 +1,48 @@
+{
+  "type": "daily_pool",
+  "entries": [
+    {
+      "weight": 10,
+      "quest": {
+        "title": "Stone Shipment",
+        "requirements": [
+          { "ingredient": { "item": "minecraft:stone" }, "count": 128 }
+        ],
+        "reward": { "id": "spacedepot:solar_coin", "count": 8 }
+      }
+    },
+    {
+      "weight": 5,
+      "quest": {
+        "title": "Iron Demand",
+        "requirements": [
+          { "ingredient": { "item": "minecraft:iron_ingot" }, "count": 32 }
+        ],
+        "reward": { "id": "spacedepot:solar_coin", "count": 20 }
+      }
+    },
+    {
+      "weight": 2,
+      "quest": {
+        "title": "Rare Materials",
+        "requirements": [
+          { "ingredient": { "item": "minecraft:copper_ingot" }, "count": 8 },
+          { "ingredient": { "item": "minecraft:iron_ingot" }, "count": 4 },
+          { "ingredient": { "item": "minecraft:gold_ingot" }, "count": 2 },
+          { "ingredient": { "item": "minecraft:diamond" }, "count": 1 }
+        ],
+        "reward": { "id": "spacedepot:solar_chunk", "count": 5 }
+      }
+    },
+    {
+      "weight": 5,
+      "quest": {
+        "title": "Dirt Deposit",
+        "requirements": [
+          { "ingredient": { "item": "minecraft:dirt" }, "count": 32 }
+        ],
+        "reward": { "id": "spacedepot:solar_coin", "count": 4 }
+      }
+    }
+  ]
+}

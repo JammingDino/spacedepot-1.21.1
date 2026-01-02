@@ -1,6 +1,7 @@
 package com.jammingdino.jd_spacedepot.registry;
 
 import com.jammingdino.jd_spacedepot.SpaceDepot;
+import com.jammingdino.jd_spacedepot.block.SpaceAutoLauncherBlock;
 import com.jammingdino.jd_spacedepot.block.SpaceLauncherBlock;
 import com.jammingdino.jd_spacedepot.block.SpaceReceiverBlock;
 import com.jammingdino.jd_spacedepot.block.crate.CrateTier;
@@ -52,4 +53,7 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> SPACE_RECEIVER_BLOCK = BLOCKS.register("space_receiver",
             () -> new SpaceReceiverBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).strength(5.0f).noOcclusion()));
+
+    public static final DeferredBlock<Block> SPACE_AUTO_LAUNCHER_BLOCK = BLOCKS.register("space_auto_launcher",
+            () -> new SpaceAutoLauncherBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).strength(5.0f).noOcclusion()));
 }

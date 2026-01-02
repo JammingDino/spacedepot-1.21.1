@@ -1,0 +1,14 @@
+{
+  "type": "main",
+  "title": "Huge Cobble Shipment",
+  "requirements": [
+    {
+      "ingredient": { "item": "minecraft:cobblestone" },
+      "count": 768
+    }
+  ],
+  "reward": {
+    "id": "spacedepot:solar_chunk",
+    "count": 2
+  }
+}

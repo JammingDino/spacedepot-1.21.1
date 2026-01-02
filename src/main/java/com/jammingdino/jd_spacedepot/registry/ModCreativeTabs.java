@@ -19,6 +19,7 @@ public class ModCreativeTabs {
                 // Machines
                 output.accept(ModItems.SPACE_LAUNCHER_ITEM.get());
                 output.accept(ModItems.SPACE_RECEIVER_ITEM.get());
+                output.accept(ModItems.SPACE_AUTO_LAUNCHER_ITEM.get());
 
                 // Currency
                 output.accept(ModItems.SOLAR_COIN.get());

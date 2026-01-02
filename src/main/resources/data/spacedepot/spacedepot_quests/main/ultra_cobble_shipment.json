@@ -1,0 +1,14 @@
+{
+  "type": "main",
+  "title": "Ultra Cobble Shipment",
+  "requirements": [
+    {
+      "ingredient": { "item": "minecraft:cobblestone" },
+      "count": 1216
+    }
+  ],
+  "reward": {
+    "id": "spacedepot:solar_chunk",
+    "count": 5
+  }
+}

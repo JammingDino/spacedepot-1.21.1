@@ -7,12 +7,12 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntity;
 
-public class SpaceLauncherMenu extends AbstractLauncherMenu {
-    public SpaceLauncherMenu(int containerId, Inventory playerInv, FriendlyByteBuf extraData) {
+public class SpaceAutoLauncherMenu extends AbstractLauncherMenu {
+    public SpaceAutoLauncherMenu(int containerId, Inventory playerInv, FriendlyByteBuf extraData) {
         this(containerId, playerInv, playerInv.player.level().getBlockEntity(extraData.readBlockPos()));
     }
-    public SpaceLauncherMenu(int containerId, Inventory playerInv, BlockEntity entity) {
-        super(ModMenuTypes.SPACE_LAUNCHER_MENU.get(), containerId, playerInv, entity);
+    public SpaceAutoLauncherMenu(int containerId, Inventory playerInv, BlockEntity entity) {
+        super(ModMenuTypes.SPACE_AUTO_LAUNCHER_MENU.get(), containerId, playerInv, entity);
     }
-    @Override protected Block getValidBlock() { return ModBlocks.SPACE_LAUNCHER_BLOCK.get(); }
+    @Override protected Block getValidBlock() { return ModBlocks.SPACE_AUTO_LAUNCHER_BLOCK.get(); }
 }

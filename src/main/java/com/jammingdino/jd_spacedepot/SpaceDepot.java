@@ -1,6 +1,7 @@
 package com.jammingdino.jd_spacedepot;
 
 import com.jammingdino.jd_spacedepot.network.PacketHandler;
+import com.jammingdino.jd_spacedepot.quest.QuestManager;
 import com.jammingdino.jd_spacedepot.registry.*;
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.BlockPos;
@@ -21,6 +22,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.AddReloadListenerEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import org.slf4j.Logger;
@@ -40,11 +42,12 @@ public class SpaceDepot {
         ModMenuTypes.MENU_TYPES.register(modEventBus);
         ModCreativeTabs.CREATIVE_MODE_TABS.register(modEventBus);
 
+        NeoForge.EVENT_BUS.register(this);
+        NeoForge.EVENT_BUS.addListener(this::addReloadListeners);
+
+        modEventBus.addListener(this::addCreative);
         modEventBus.addListener(ModCapabilities::registerCapabilities);
         modEventBus.addListener(PacketHandler::register);
-
-        NeoForge.EVENT_BUS.register(this);
-        modEventBus.addListener(this::addCreative);
 
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -98,5 +101,9 @@ public class SpaceDepot {
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
+    }
+
+    private void addReloadListeners(AddReloadListenerEvent event) {
+        event.addListener(new QuestManager());
     }
 }

@@ -1,5 +1,6 @@
 {
   "itemGroup.spacedepot": "Space Depot",
+
   "block.spacedepot.wooden_space_crate": "Wooden Space Crate",
   "block.spacedepot.iron_space_crate": "Iron Space Crate",
   "block.spacedepot.gold_space_crate": "Gold Space Crate",
@@ -18,5 +19,13 @@
 
   "item.spacedepot.solar_coin": "Solar Coin",
   "item.spacedepot.solar_chunk": "Solar Chunk",
-  "block.spacedepot.solar_block": "Solar Block"
+  "block.spacedepot.solar_block": "Solar Block",
+
+  "block.spacedepot.space_receiver": "Space Receiver",
+  "block.spacedepot.space_launcher": "Space Launcher",
+  "block.spacedepot.space_auto_launcher": "Auto Space Launcher",
+
+  "container.spacedepot.receiver": "Space Receiver",
+  "container.spacedepot.launcher": "Space Launcher",
+  "container.spacedepot.auto_launcher": "Auto Space Launcher"
 }

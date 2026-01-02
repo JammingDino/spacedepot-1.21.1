@@ -15,6 +15,12 @@ public class ModCapabilities {
                 (blockEntity, direction) -> blockEntity.energy
         );
 
+        event.registerBlockEntity(
+                Capabilities.EnergyStorage.BLOCK,
+                ModBlockEntities.SPACE_AUTO_LAUNCHER_BE.get(),
+                (blockEntity, direction) -> blockEntity.energy
+        );
+
         // --- ITEM CAPABILITIES ---
 
         // 1. Launcher Input
@@ -35,6 +41,13 @@ public class ModCapabilities {
         event.registerBlockEntity(
                 Capabilities.ItemHandler.BLOCK,
                 ModBlockEntities.SPACE_CRATE_BE.get(),
+                (blockEntity, direction) -> new InvWrapper(blockEntity)
+        );
+
+        // 4. Auto Launcher Input
+        event.registerBlockEntity(
+                Capabilities.ItemHandler.BLOCK,
+                ModBlockEntities.SPACE_AUTO_LAUNCHER_BE.get(),
                 (blockEntity, direction) -> new InvWrapper(blockEntity)
         );
     }

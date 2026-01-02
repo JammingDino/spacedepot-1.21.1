@@ -1,0 +1,14 @@
+{
+  "type": "main",
+  "title": "Cobble Shipment",
+  "requirements": [
+    {
+      "ingredient": { "item": "minecraft:cobblestone" },
+      "count": 64
+    }
+  ],
+  "reward": {
+    "id": "spacedepot:solar_coin",
+    "count": 1
+  }
+}

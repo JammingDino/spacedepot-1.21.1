@@ -1,5 +1,6 @@
 package com.jammingdino.jd_spacedepot;
 
+import com.jammingdino.jd_spacedepot.client.SpaceAutoLauncherScreen;
 import com.jammingdino.jd_spacedepot.client.SpaceLauncherScreen;
 import com.jammingdino.jd_spacedepot.client.SpaceReceiverScreen;
 import com.jammingdino.jd_spacedepot.registry.ModMenuTypes;
@@ -33,5 +34,6 @@ public class SpaceDepotClient {
         event.register(ModMenuTypes.SPACE_CRATE_MENU.get(), SpaceCrateScreen::new);
         event.register(ModMenuTypes.SPACE_LAUNCHER_MENU.get(), SpaceLauncherScreen::new);
         event.register(ModMenuTypes.SPACE_RECEIVER_MENU.get(), SpaceReceiverScreen::new);
+        event.register(ModMenuTypes.SPACE_AUTO_LAUNCHER_MENU.get(), SpaceAutoLauncherScreen::new);
     }
 }

@@ -2,6 +2,7 @@ package com.jammingdino.jd_spacedepot.registry;
 
 import com.jammingdino.jd_spacedepot.SpaceDepot;
 import com.jammingdino.jd_spacedepot.block.crate.SpaceCrateBlockEntity;
+import com.jammingdino.jd_spacedepot.block.entity.SpaceAutoLauncherBlockEntity;
 import com.jammingdino.jd_spacedepot.block.entity.SpaceLauncherBlockEntity;
 import com.jammingdino.jd_spacedepot.block.entity.SpaceReceiverBlockEntity;
 import net.minecraft.core.registries.Registries;
@@ -30,4 +31,8 @@ public class ModBlockEntities {
     public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SpaceReceiverBlockEntity>> SPACE_RECEIVER_BE =
             BLOCK_ENTITIES.register("space_receiver", () -> BlockEntityType.Builder.of(SpaceReceiverBlockEntity::new,
                     ModBlocks.SPACE_RECEIVER_BLOCK.get()).build(null));
+
+    public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<SpaceAutoLauncherBlockEntity>> SPACE_AUTO_LAUNCHER_BE =
+            BLOCK_ENTITIES.register("space_auto_launcher", () -> BlockEntityType.Builder.of(SpaceAutoLauncherBlockEntity::new,
+                    ModBlocks.SPACE_AUTO_LAUNCHER_BLOCK.get()).build(null));
 }
